@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical 4</title>
+    <style>
+        *{
+            /* margin: 0; */
+            /* padding: 0; */
+            /* box-sizing: border-box; */
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            padding: 20px 0;
+        }
+        hr{
+            width: 90%;
+            margin: 0 auto;
+            border: 2px dashed gray;
+        }
+        #header{
+            border: 1px solid black;
+            height: 400px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: wheat;
+        }
+        .container{
+            /* width: 90%; */
+            /* margin: 0 auto; */
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: sandybrown;
+            padding: 0 40px;
+        }
+        #navbar .nav .navmenu{
+            display: flex;
+            list-style-type: none;
+        }
+        .navmenu a{
+            text-decoration: none;
+            padding: 0 20px;
+            color: black;
+        }
+        .navmenu a:hover{
+            text-decoration: underline 3px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nav-menu</h1>
+    <br>
+    <hr>
+    <br>
+    <header id="header">
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo">
+                    <h2>Tops Technologies</h2>
+                </div>
+                <div class="nav">
+                    <ul class="navmenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
