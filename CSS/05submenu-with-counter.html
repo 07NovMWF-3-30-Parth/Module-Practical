@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical 5</title>
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0 auto; */
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            padding: 20px 0;
+        }
+
+        hr {
+            width: 90%;
+            border: 2px dashed gray;
+        }
+
+        #header {
+            border: 1px solid black;
+            /* height: 450px; */
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: thistle;
+            padding: 0 40px;
+        }
+
+        #navbar .nav .navmenu {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            padding: 0 20px;
+            color: black;
+        }
+
+        .navmenu a:hover {
+            text-decoration: underline 3px dashed red;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        .content{
+            background-color: lightblue;
+            width: 30%;
+        }
+
+        .content ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+
+        .content li::before {
+            counter-increment: section;
+            content: counters(section, " ") ":- ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Submenu list using counter</h1>
+    <br>
+    <hr>
+    <br>
+    <header id="header">
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo">
+                    <h2>Tops Technologies</h2>
+                </div>
+                <div class="nav">
+                    <ul class="navmenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="heading">
+            <h2>Ironman movies(Robert Downey Jr.)</h2>
+        </div>
+        <div class="content">
+            <h3>Content(with counter)</h3>
+            <ol>
+                <li>Main movies
+                    <ol>
+                        <li>Iron man 1 (2008)</li>
+                        <li>Iron man 2 (2010)</li>
+                        <li>Iron man 3 (2013)</li>
+                    </ol>
+                </li>
+                <li>Other movies
+                    <ol>
+                        <li>The Incredible Hulk (2008)</li>
+                        <li>Captain America: Civil War (2016)</li>
+                        <li>Spider-Man: Homecoming (2017)</li>
+                    </ol>
+                </li>
+                <li>Avengers
+                    <ol>
+                        <li>The Avengers (2012)</li>
+                        <li>The Avengers : Age of Ultron (2015)</li>
+                        <li>The Avengers : Infinity War (2018)</li>
+                        <li>The Avengers : Endgame (2019)</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </header>
+</body>
+
+</html>
