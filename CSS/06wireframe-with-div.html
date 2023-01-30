@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px dotted black; */
+            
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            letter-spacing: 1px;
+            padding: 20px 0;
+        }
+        hr{
+            width: 90%;
+            margin: 0 auto;
+            border: 2px dashed gray;
+        }
+        body{
+            width: 90%;
+            margin: 0 auto;
+        }
+        div {
+            border: 2px solid black;
+        }
+        .header {
+            /* padding-left: 20px; */
+            border: 1px solid black;
+            padding-bottom: 40px;
+        }
+        .header>h2{
+            padding-left: 50px;
+        }
+
+        .container {
+            padding: 10px;
+            width: 90%;
+            margin: 5px auto;
+        }
+
+        .nav {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .col-50 {
+            margin: 5px;
+            padding-top: 80px;
+            text-align: center;
+            width: 50%;
+            height: 200px;
+        }
+        .col-80 {
+            width: 80%;
+            margin: 5px;
+            text-align: center;
+        }     
+        .first{
+            height: 250px;
+            padding-top: 100px;
+            margin: 10px;
+        }
+        .second{
+            height: 250px;
+            padding-top: 100px;
+            margin: 10px;
+        }
+        .col-20 {
+            text-align: center;
+            width: 20%;
+            padding-top: 250px;
+            height: 530px;
+            margin: 10px 10px 10px 0;
+        }   
+        .footer{
+            margin-top: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wireframe layout for template using div</h1>
+    <br>
+    <hr>
+    <br>
+    <header class="header">
+        <h2>&lt; header &gt;</h2>
+        <div class="container">
+            <nav class="nav">
+                <h2>&lt; nav &gt;</h2>
+            </nav>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-50">
+                    <h2>&lt; main-text &gt;</h2>
+                </div>
+                <div class="col-50">
+                    <h2>&lt; image/info &gt;</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <section>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-80">
+                        <div class="first"><h2>&lt; section 1 &gt;</h2></div>
+                        <div class="second"><h2>&lt; section 2 &gt;</h2></div>
+                    </div>
+                    <div class="col-20"><h2>&lt; aside &gt;</h2></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <h2>&lt; footer &gt;</h2>
+        </div>
+    </footer>
+</body>
+</html>
